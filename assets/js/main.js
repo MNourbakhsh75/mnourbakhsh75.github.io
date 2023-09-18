@@ -38,10 +38,62 @@
 				// Stop propagation, default.
 					event.stopPropagation();
 					event.preventDefault();
-
-				// Submit form.
-					$(this).parents('form').submit();
-
+					var name = $('#name').val()
+					if(name.length == 0){
+						$('#nameErr').remove()
+						$('#name').after('<div style="color:red;" id="nameErr">Name is Required</div>');
+					}else{
+						$('#nameErr').remove()
+					}
+					var email = $('#email').val()
+					if(email.length == 0){
+						$('#emailErr').remove()
+						$('#email').after('<div style="color:red;" id="emailErr">Email is Required</div>');
+					}else{
+						$('#emailErr').remove()
+					}
+					var message = $('#message').val()
+					if(message.length == 0){
+						$('#messageErr').remove()
+						$('#message').after('<div style="color:red;" id="messageErr">Message is Required</div>');
+					}else{
+						$('#messageErr').remove()
+					}
+					if (name.length != 0 && email.length != 0 && message.length != 0){
+						var data = {}
+						data['name'] = name
+						data['email'] = email
+						data['message'] = message
+						var formBtn = document.getElementById("formBtn")
+						formBtn.disabled = true
+						var url = 'https://script.google.com/macros/s/AKfycbw5mFmjF4hWj4p9RcWKeIhDGjq7zfRbv0bl6leTBxKEkdLtC0QgJ3lHR7ix_dJ8qGNcsw/exec';
+						var xhr = new XMLHttpRequest();
+						xhr.open('POST', url);
+						// xhr.withCredentials = true;
+						xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+						xhr.onreadystatechange = function() {
+							if (xhr.readyState === 4 && xhr.status === 200) {
+								// console.log(data)
+								var snackbar = document.getElementById("snackbar")
+								snackbar.className = "show";
+								setTimeout(function(){ snackbar.className = snackbar.className.replace("show", ""); }, 5000);
+								formBtn.disabled = false
+								$('#resForm')[0].reset();
+							}
+							// else{
+							// 	var failSnackbar = document.getElementById("failSnackbar")
+							// 	failSnackbar.className = "failShow";
+							// 	$('#resForm')[0].reset();
+							// 	setTimeout(function(){ failSnackbar.className = failSnackbar.className.replace("failShow", ""); }, 5000);
+							// }
+						};
+						var encoded = Object.keys(data).map(function(k) {
+								return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
+							}).join('&');
+							xhr.send(encoded);
+						}
+						// Submit form.
+						// form.submit();
 			});
 
 	// Sidebar.
