@@ -164,7 +164,7 @@ input, select, textarea {
 /* Type */
 
 	body, input, select, textarea {
-		color: rgba(255, 255, 255, 0.55);
+		color: rgba(43, 43, 43, 0.55);
 		font-family: Arial, Helvetica, sans-serif;
 		font-size: 16.5pt;
 		font-weight: normal;
@@ -207,11 +207,11 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #ffffff;
+			color: rgba(0, 0, 0, 0.55);
 		}
 
 	strong, b {
-		color: #ffffff;
+		color: rgba(43, 43, 43, 0.55);
 		font-weight: bold;
 	}
 
@@ -224,7 +224,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: #000000;
 		font-weight: bold;
 		line-height: 1.5;
 		margin: 0 0 0.5em 0;
@@ -1882,9 +1882,9 @@ input, select, textarea {
 		transition: border-color 0.2s ease;
 		background-color: transparent;
 		border: solid 1px !important;
-		border-color: rgba(255, 255, 255, 0.15) !important;
+		border-color: rgba(43, 43, 43, 0.55) !important;
 		border-radius: 3em;
-		color: #ffffff !important;
+		color: rgba(43, 43, 43, 0.55) !important;
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.6em;
@@ -1915,7 +1915,7 @@ input, select, textarea {
 			-webkit-transition: opacity 0.2s ease, -webkit-transform 0.2s ease;
 			-ms-transition: opacity 0.2s ease, -ms-transform 0.2s ease;
 			transition: opacity 0.2s ease, transform 0.2s ease;
-			background: #ffffff;
+			background: rgba(43, 43, 43, 0.55);
 			border-radius: 3em;
 			content: '';
 			height: 100%;
@@ -1994,7 +1994,7 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			border-color: rgba(255, 255, 255, 0.55) !important;
+			border-color: rgba(43, 43, 43, 0.55) !important;
 		}
 
 			input[type="submit"]:hover:after,
@@ -2014,7 +2014,7 @@ input, select, textarea {
 			input[type="button"]:hover:active,
 			button:hover:active,
 			.button:hover:active {
-				border-color: #ffffff !important;
+				border-color: rgba(43, 43, 43, 0.55) !important;
 			}
 
 				input[type="submit"]:hover:active:after,
@@ -2037,7 +2037,7 @@ input, select, textarea {
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		border-radius: 0.25em;
-		border: solid 1px rgba(255, 255, 255, 0.15);
+		border: solid 1px rgba(0, 0, 0, 0.15);
 		background: rgba(255, 255, 255, 0.05);
 		margin: 0 0 2em 0;
 	}
@@ -2045,7 +2045,7 @@ input, select, textarea {
 		.features section {
 			padding: 3.5em 3em 1em 7em ;
 			width: 100%;
-			border-top: solid 1px rgba(255, 255, 255, 0.15);
+			border-top: solid 1px rgba(0, 0, 0, 0.15);
 			position: relative;
 		}
 
@@ -2054,7 +2054,7 @@ input, select, textarea {
 			}
 
 			.features section:nth-child(2n) {
-				border-left: solid 1px rgba(255, 255, 255, 0.15);
+				border-left: solid 1px rgba(0, 0, 0, 0.15);
 			}
 
 			.features section .icon {
@@ -2344,7 +2344,7 @@ input, select, textarea {
 		}
 
 	label {
-		color: #ffffff;
+		color: rgba(43, 43, 43, 0.55);
 		font-weight: bold;
 		line-height: 1.5;
 		margin: 0 0 0.7em 0;
@@ -2365,7 +2365,7 @@ input, select, textarea {
 		background: rgba(255, 255, 255, 0.05);
 		border-radius: 0.25em;
 		border: none;
-		border: solid 1px rgba(255, 255, 255, 0.15);
+		border: solid 1px rgba(43, 43, 43, 0.55);
 		color: inherit;
 		display: block;
 		outline: 0;
@@ -2389,8 +2389,8 @@ input, select, textarea {
 		input[type="tel"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #ffffff;
-			box-shadow: 0 0 0 1px #ffffff;
+			border-color: rgba(43, 43, 43, 0.55);
+			box-shadow: 0 0 0 1px rgba(43, 43, 43, 0.55);
 		}
 
 	select {
@@ -3290,23 +3290,23 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #5e42a6;
+			background-color: #f2f2f2;
 		}
 
 		.wrapper.style1-alt {
-			background-color: #493382;
+			background-color: #f2f2f2;
 		}
 
 		.wrapper.style2 {
-			background-color: #5052b5;
+			background-color: #f2f2f2;
 		}
 
 		.wrapper.style2-alt {
-			background-color: #3e4094;
+			background-color: #f2f2f2;
 		}
 
 		.wrapper.style3 {
-			background-color: #b74e91;
+			background-color: #f2f2f2;
 		}
 
 		.wrapper.style3-alt {
@@ -3554,7 +3554,7 @@ input, select, textarea {
 		}
 
 	#footer > .inner a {
-		border-bottom-color: rgba(255, 255, 255, 0.15);
+		border-bottom-color: rgba(43, 43, 43, 0.55);
 	}
 
 		#footer > .inner a:hover {
@@ -3563,7 +3563,7 @@ input, select, textarea {
 
 	#footer > .inner .menu {
 		font-size: 0.8em;
-		color: rgba(255, 255, 255, 0.15);
+		color: rgba(43, 43, 43, 0.55);
 	}
 
 	#header + #wrapper + #footer > .inner {
