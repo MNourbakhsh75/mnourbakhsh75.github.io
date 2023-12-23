@@ -1351,7 +1351,9 @@ input, select, textarea {
 						.row.gtr-200.gtr-uniform > * {
 							padding-top: 3em;
 						}
-
+			#sidebar > .inner > .profile_img_span > .profile_img{
+				display: none;
+			}
 		}
 
 		@media screen and (max-width: 736px) {
@@ -1596,10 +1598,16 @@ input, select, textarea {
 						.row.gtr-200.gtr-uniform > * {
 							padding-top: 3em;
 						}
-
+			#sidebar > .inner > .profile_img_span > .profile_img{
+				display: none;
+			}
 		}
 
 		@media screen and (max-width: 480px) {
+
+			#sidebar > .inner > .profile_img_span > .profile_img{
+				display: none;
+			}
 
 			.row {
 				display: flex;
@@ -2226,6 +2234,10 @@ input, select, textarea {
 
 		@media screen and (max-width: 980px) {
 
+			#sidebar > .inner > .profile_img_span > .profile_img{
+				display: none;
+			}
+
 			.features {
 				display: block;
 			}
@@ -2244,6 +2256,10 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 
+			#sidebar > .inner > .profile_img_span > .profile_img{
+				display: none;
+			}
+
 			.features section {
 				padding: 2.5em 1.5em 0.1em 5.5em ;
 			}
@@ -2256,6 +2272,10 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 480px) {
+
+			#sidebar > .inner > .profile_img_span > .profile_img{
+				display: none;
+			}
 
 			.features section {
 				padding: 2em 1.5em 0.1em 1.5em ;
@@ -2318,6 +2338,10 @@ input, select, textarea {
 				}
 
 		@media screen and (max-width: 480px) {
+
+			#sidebar > .inner > .profile_img_span > .profile_img{
+				display: none;
+			}
 
 			form > .fields {
 				width: calc(100% + 3em);
@@ -2786,6 +2810,10 @@ input, select, textarea {
 
 		@media screen and (max-width: 480px) {
 
+			#sidebar > .inner > .profile_img_span > .profile_img{
+				display: none;
+			}
+
 			ul.actions:not(.fixed) {
 				-moz-flex-direction: column;
 				-webkit-flex-direction: column;
@@ -2899,6 +2927,10 @@ input, select, textarea {
 
 		@media screen and (max-width: 480px) {
 
+			#sidebar > .inner > .profile_img_span > .profile_img{
+				display: none;
+			}
+
 			ul.menu > li {
 				border-left: 0;
 				display: block;
@@ -2997,6 +3029,10 @@ input, select, textarea {
 
 		@media screen and (max-width: 980px) {
 
+			#sidebar > .inner > .profile_img_span > .profile_img{
+				display: none;
+			}
+
 			.split {
 				display: block;
 			}
@@ -3026,6 +3062,10 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 736px) {
+
+			#sidebar > .inner > .profile_img_span > .profile_img{
+				display: none;
+			}
 
 			.split > * {
 				margin: 3em 0 0 0;
@@ -3145,6 +3185,10 @@ input, select, textarea {
 
 		@media screen and (max-width: 980px) {
 
+			#sidebar > .inner > .profile_img_span > .profile_img{
+				display: none;
+			}
+
 			.spotlights > section {
 				display: block;
 			}
@@ -3169,6 +3213,10 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 736px) {
+
+			#sidebar > .inner > .profile_img_span > .profile_img{
+				display: none;
+			}
 
 			.spotlights > section > .image {
 				height: 50vh;
@@ -3279,6 +3327,10 @@ input, select, textarea {
 
 			@media screen and (max-width: 736px) {
 
+				#sidebar > .inner > .profile_img_span > .profile_img{
+					display: none;
+				}
+
 				.wrapper > .inner {
 					padding: 3em 2em 1em 2em ;
 				}
@@ -3346,6 +3398,10 @@ input, select, textarea {
 			}
 
 			@media screen and (max-width: 736px) {
+
+				#sidebar > .inner > .profile_img_span > .profile_img{
+					display: none;
+				}
 
 				.wrapper.fullscreen {
 					padding: 2em 0;
@@ -3616,7 +3672,23 @@ input, select, textarea {
 			body.is-ie #sidebar > .inner {
 				height: 100%;
 			}
+		
+		/* #sidebar > .inner > .profile_img_span{ */
+			/* border-color: rgba(58, 62, 65, 0.2); */
+		/* } */
 
+		#sidebar > .inner > .profile_img_span > .profile_img{
+			border-color: rgba(58, 62, 65, 0.2);
+			border: 1px solid;
+			border-radius: 50%;
+			position:static;
+			width: 150px;
+			height: 150px;
+			margin-right: 15%;
+			margin-top: 5%;
+			text-align: center;
+		}
+		
 		#sidebar nav > ul {
 			list-style: none;
 			padding: 0;
